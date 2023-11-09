@@ -27,6 +27,11 @@ public class TiledTile implements TiledCustomizable {
     private Map<String,Object> nonDefaultProperties = Collections.emptyMap();
     private Map<String,Object> properties = Collections.emptyMap();
     
+    TiledTile(int id, int tilesetX, int tilesetY) {
+        this.id = id;
+        this.tilesetX = tilesetX;
+        this.tilesetY = tilesetY;
+    }
     TiledTile(int id) {
         this.id = id;
     }

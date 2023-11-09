@@ -1630,7 +1630,7 @@ public abstract class TiledReader {
             for (int i = 0; i < tileCount; i++) {
                 TiledTile tile = idTiles.get(i);
                 if (tile == null) {
-                    tile = new TiledTile(i);
+                    tile = new TiledTile(i, i % columns, i/columns);
                     idTiles.put(i, tile);
                 }
                 tilesInDisplayOrder.add(tile);
